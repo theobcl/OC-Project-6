@@ -1,27 +1,46 @@
-# HotTakes
+Le sujet du projet 6 du parcours Développeur web chez Openclassrooms porte sur le développement d'une application d’évaluation des sauces piquantes pour la marque "PIIQUANTE". L'objectif étant de créer un MVP permettant aux utilisateurs d’ajouter leurs sauces préférées et de liker ou disliker les sauces ajoutées par les autres utilisateurs.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.4.
+* 👀  &nbsp; Voir : [Le projet sur OpenClassrooms](https://github.com/OpenClassrooms-Student-Center/Web-Developer-P6 "Cliquez pour voir le projet")
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+#### Contenus de ce repository
 
-## Code scaffolding
+* Ce repo contient les deux dossiers `Frontend` et `Backend`.
+Vous pouvez cloner ce repository pour récupérer en local les deux parties Front et Back de l'application.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+* Si besoin, vous pouvez trouver le Frontend séparément sur [github](https://github.com/OpenClassrooms-Student-Center/Web-Developer-P6).
 
-## Build
+***
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### 🔨 &nbsp; Installation
 
-## Running unit tests
+* Cloner ce projet depuis GitHub.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+#### 💡 &nbsp; Faire tourner le Frontend
 
-## Running end-to-end tests
+* Ouvrir le terminal sur ce dossier et exécuter  `npm install` pour installer les dépendances.
+* Exécuter `npm install node-sass` pour installer sass.
+* Démarrer ng serve (ou `npm start`) pour avoir accès au serveur de développement.
+* Rendez-vous sur `http://localhost:4200`.
+* L'application va se recharger automatiquement si vous modifiez un fichier source.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+#### 💡 &nbsp; Faire tourner le Backend
 
-## Further help
+* Ouvrir le terminal sur ce dossier.
+* Pour utiliser le serveur, chargez le package nodemon : `npm install -g nodemon`.
+* Puis lancez le serveur: `nodemon server`.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+#### Pour faire simple
+
+Si les packages sont déja installés, ces commandes suffisent à démarrer les serveurs.
+
+* `npm start` via le terminal sur le frontend
+* `nodemon server` via le terminal sur le backend
+* Se connecter à l'url : `http://localhost:4200`
+
+##### 🖥 &nbsp; Connexion
+
+* Ouvrir [localhost:4200](http://localhost:4200/) dans votre navigateur.
+* Pour s'inscrire sur l'application, l'utilisateur doit fournir un email et un mot de passe contenant 04 caractères minimum.
+
+
