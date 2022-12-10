@@ -15,6 +15,8 @@ Vous pouvez cloner ce repository pour récupérer en local les deux parties Fron
 ### 🔨 &nbsp; Installation
 
 * Cloner ce projet depuis GitHub.
+* Créer un fichier .env (`touch .env`) et ajouter la variable d'environnement `MONGODB_CONNECT=<string de connexion MongoDB>` 
+
 
 #### 💡 &nbsp; Faire tourner le Frontend
 
