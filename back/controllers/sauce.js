@@ -1,6 +1,5 @@
-const fs = require('fs');
-
 const Sauce = require('../models/sauce');
+const fs = require('fs');
 
 exports.modifySauce = (req, res, next) => {
   const sauceObject = req.file ? {
