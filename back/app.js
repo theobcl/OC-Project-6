@@ -1,11 +1,13 @@
 const express = require("express"); 
 const mongoose = require('mongoose');
+const path = require("path");
 
 const dotenv = require("dotenv");
 
 dotenv.config();
 
-const userRoutes = require('./routes/User');
+const userRoutes = require('./routes/user');
+const sauceRoutes = require('./routes/sauce');
 
 mongoose.connect(process.env.MONGODB_CONNECT,
   { useNewUrlParser: true,
@@ -25,5 +27,7 @@ app.use((req, res, next) => {
 app.use(express.json());
     
 app.use("/api/auth", userRoutes);
+app.use("/api/sauces", sauceRoutes);
+app.use("/images", express.static(path.join(__dirname, "images")))
 
 module.exports = app; 
