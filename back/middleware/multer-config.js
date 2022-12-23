@@ -1,11 +1,13 @@
 const multer = require("multer"); 
 
+// Génère l'extension du fichier
 const MIME_TYPES= {
   'image/jpg': 'jpg',
   'image/jpeg': 'jpg',
   'image/png': 'png'
 };
 
+// Gestion des fichiers entrants dans les requêtes HTTP
 const storage = multer.diskStorage({
   destination: (req, file, callback) => {
     callback(null, "images")

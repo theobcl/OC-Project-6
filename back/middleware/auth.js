@@ -1,5 +1,6 @@
 const jwt = require('jsonwebtoken');
- 
+
+// Protége les routes sélectionnées et permet de vérifier si l'utilisateur est authentifié avant d'autoriser l'envoi de ses requêtes //
 module.exports = (req, res, next) => {
   try {
     const token = req.headers.authorization.split(' ')[1];
